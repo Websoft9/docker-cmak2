@@ -7,7 +7,8 @@ version: '3.8'
 
 services:
   kafka_manager:
-    image: hlebalbau/kafka-manager:${APP_VERSION}
+    build: .
+    image: cmak
     container_name: "${APP_CONTAINER_NAME}"
     restart: always
     ports:
